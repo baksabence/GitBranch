@@ -5,14 +5,18 @@ package gitbranch;
 public class GitBranch {
 
   
-    public static void main(String[] args) {
-        int i = GitBranch.fv();
+    public void main(String[] args) {
+        GitBranch obj = new GitBranch();
+        int i = obj.fv();
     }
 
-    private static int fv() {
-        System.out.println("static fv");
-        return -1;
-
+    private int fv() {
+        System.out.println("nem static fv");
+        return 0;
+    }
+    
+    public static void elj() {
+        
     }
     
     
